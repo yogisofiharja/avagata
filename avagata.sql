@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `kategori`
 --
 create database avagata;
+use avagata;
 CREATE TABLE IF NOT EXISTS `kategori` (
   `id_kat` int(11) NOT NULL AUTO_INCREMENT,
   `nama_kat` varchar(200) NOT NULL,
