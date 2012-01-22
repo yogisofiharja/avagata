@@ -59,11 +59,11 @@ html { padding:0; margin:0;}
 .body .left2 .portfolio { width:150px; float:left; margin:10px 10px; padding:0;}
 .body .left2 .portfolio a { text-decoration:none; font: bold 11px Tahoma, Geneva, sans-serif; color:#4a4a4a; padding:3px 5px; margin:2px 3px; background:#d9d9d9; border-left:1px solid #e2e2e2; border-top:1px solid #d1d1d1;}
 .body .left2 .portfolio a:hover { color:#529cbb;}
-.body .right2 { width:279px; float:left; margin:0; padding:20px;}
-.body .right2 ul { font: normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; margin:5px 15px; padding:0; list-style:none;}
-.body .right2 li { background:#ececec url(images/right2_bg_ul_li.gif) left no-repeat; margin:5px 2px; padding:5px 10px;}
-.body .right2 a { font: normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; text-decoration:none;}
-.body .right2 a:hover { color:#3f91b4; text-decoration:underline;}
+.body .left1 { width:279px; float:left; margin:0; padding:20px;}
+.body .left1 ul { font: normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; margin:5px 15px; padding:0; list-style:none;}
+.body .left1 li { background:#ececec url(images/right2_bg_ul_li.gif) left no-repeat; margin:5px 2px; padding:5px 10px;}
+.body .left1 a { font: normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; text-decoration:none;}
+.body .left1 a:hover { color:#3f91b4; text-decoration:underline;}
 
 /********** contact form **********/
 #contactform { margin:0; padding:5px 10px;}

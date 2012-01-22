@@ -1,4 +1,6 @@
-<div class="right2">
+<div class="body">
+    <div class="bgg1">
+      <div class="left1">
         <h2>Sub Navigation</h2>
         <ul>
           <li><a href="#">Management</a></li>
@@ -13,8 +15,3 @@
         <p><em>“It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Content here, content here', making it look like readable Englis</em></p>
         <p><strong>-John Smith, webdesigner</strong></p>
       </div>
-      <div class="clr"></div>
-    </div>
-    <div class="clr"></div>
-  </div>
-  <div class="clr"></div>

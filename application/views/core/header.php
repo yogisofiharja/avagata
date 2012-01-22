@@ -51,12 +51,12 @@ p#controls { margin:0; position:relative; }
       <div class="clr"></div>
       <div class="menu">
         <ul>
-           <li><a href="<?php echo base_url();?>"  class="active"><span>Home</span></a></li>
+         <li><a href="<?php echo base_url();?>" class="active"><span>Home</span></a></li>
           <li><a href="<?php echo base_url();?>download"><span>Download</span></a></li>
-          <li><a href=""><span>Documentation</span></a></li>
-          <li><a href=""><span>Blog</span></a></li>
-          <li><a href=""><span>About Avagata</span></a></li>
-	  <li><a href=""><span>Donate</span></a></li>
+          <li><a href="<?php echo base_url();?>documentation"><span>Documentation</span></a></li>
+          <li><a href="<?php echo base_url();?>blog"><span>Blog</span></a></li>
+          <li><a href="<?php echo base_url();?>about"><span>About Avagata</span></a></li>
+	  <li><a href="<?php echo base_url();?>participate"><span>Participate</span></a></li>
         </ul>
       </div>
       <div class="clr"></div>

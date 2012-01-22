@@ -1,6 +1,5 @@
- <div class="body">
-    <div class="bgg2">
-      <div class="left2">
+
+      <div class="right1">
         <p><strong>It has survived not only five centuries, but also the leap into  electronic typesetting, remaining essentially unchanged. </strong></p>
         <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop  publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <p>&nbsp;</p>
@@ -29,3 +28,8 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
       </div>
+ <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
