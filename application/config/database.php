@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
+$db['default']['username'] = 'avagata';
+$db['default']['password'] = 'pass4avagata';
 $db['default']['database'] = 'avagata';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
