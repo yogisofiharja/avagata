@@ -53,8 +53,10 @@ html { padding:0; margin:0;}
 .body img.floated { float:left; margin:10px 15px; padding:0;}
 .body .left1 { width:279px; float:left; margin:0; padding:20px;}
 .body .right1 { width:596px; float:left; margin:20px !important; margin:20px 10px 20px 20px; padding:0;}
+.body .right { width:918px; float:left; margin:20px !important; margin:20px 10px 20px 20px; padding:0;}
 .body .bgg1 {background:url(images/bg_body1.gif) top repeat-y; padding:0; margin:0; width:958px;}
 .body .bgg2 {background:url(images/body2_bg.gif) left top repeat-y; padding:0; margin:0; width:958px; }
+.body .bgg {background:url(images/bg_body.gif) top repeat-y; padding:0; margin:0; width:958px;}
 .body .left2 { width:598px; float:left; margin:20px !important; margin:20px 20px 20px 10px; padding:0;}
 .body .left2 .portfolio { width:150px; float:left; margin:10px 10px; padding:0;}
 .body .left2 .portfolio a { text-decoration:none; font: bold 11px Tahoma, Geneva, sans-serif; color:#4a4a4a; padding:3px 5px; margin:2px 3px; background:#d9d9d9; border-left:1px solid #e2e2e2; border-top:1px solid #d1d1d1;}
