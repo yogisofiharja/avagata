@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="block_header">
+      <div class="logo"><a href="index.html"><img src="images/logo.gif" width="458" height="129" border="0" alt="logo" /></a></div>
+      <div class="search">
+        <form id="form1" name="form1" method="post" action="">
+          <label>
+            <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
+            <input name="b" type="image" src="images/search.gif" class="button" />
+          </label>
+        </form>
+      </div>
+      <div class="clr"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html" ><span>Home</span></a></li>
+          <li><a href="services.html"><span>Services</span></a></li>
+          <li><a href="portfolio.html" ><span>Portfolio</span></a></li>
+          <li><a href="services.html"><span>About us</span></a></li>
+          <li><a href="contact.html"  class="active"><span>Contact us</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="header_text2">
+        <h2>Our Services</h2>
+        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many.</p>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="bgg2">
+      <div class="left2">
+        <p><strong>It has survived not only five centuries, but also the leap into  electronic typesetting, remaining essentially unchanged. </strong></p>
+        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop  publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>&nbsp;</p>
+        <form action="contact.php" method="post" id="contactform">
+            <ol>
+              <li>
+                <label for="name">First Name *</label>
+                <input id="name" name="name" class="text" />
+              </li>
+              <li>
+                <label for="email">Your email <span class="red">*</span></label>
+                <input id="email" name="email" class="text" />
+              </li>
+              <li>
+                <label for="company">Company Name</label>
+                <input id="company" name="company" class="text" />
+              </li>
+              <li>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" class="text" />
+              </li>
+              <li>
+                <label for="message">Message <span class="red">*</span></label>
+                <textarea id="message" name="message" rows="6" cols="50"></textarea>
+              </li>
+              <li class="buttons">
+                <input type="image" name="imageField" id="imageField" src="images/send.gif" />
+              </li>
+          </ol>
+        </form>
+</div>
+      <div class="right2">
+        <h2>Department</h2>
+        <ul>
+          <li><a href="#">Germany</a></li>
+          <li><a href="#">USA</a><br />
+          </li>
+          <li><a href="#">France</a></li>
+          <li><a href="#">Italy</a></li>
+          <li><a href="#">Sweden</a> </li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2>Testimonials</h2>
+        <p><em>“It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Content here, content here', making it look like readable Englis</em></p>
+        <p><strong>-John Smith, webdesigner</strong></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="footer">
+    <div class="footer_resize">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="services.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="portfolio.html">rss feed</a></li>
+        <li><a href="#"><img src="images/twitter.gif" alt="twitter" width="80" height="15" border="0" /></a></li>
+      </ul>
+      <p>Copyright © Sitename.com. <a href="http://dreamtemplate.com/">dreamtemplate.com</a>. All Rights Reserved</p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

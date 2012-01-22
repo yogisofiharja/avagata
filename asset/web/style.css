@@ -1,0 +1,93 @@
+body { margin:0; padding:0; width:100%; background: #000 url(images/main_bg.gif) top repeat-x;}
+html { padding:0; margin:0;}
+
+/* main */
+.main {width:100%; padding:0; margin:0 auto;}
+
+/********** header **********/
+.header { }
+.block_header {margin:0 auto; padding:0; width:958px;}
+/*logo*/
+.logo { float:left; padding:0; margin:0; width:458px; height:129px;}
+/* search */
+.search { padding:0; margin:40px 50px 0 0; float:right;}
+.search span { display:block; float:left;}
+.search form { display:block; float:left; padding:5px 0;}
+.search form .keywords { float:left; background: url(images/search_bg.gif) left top no-repeat; border:0; height:14px; width:204px; padding:4px 5px; margin:0; font:normal 11px Arial, Helvetica, sans-serif; color:#a1a1a1;}
+.search form .button { float:left; margin:0; padding:0;}
+/* menu */	
+.menu { padding:0; margin:0; width:958px; background:url(images/menu_bg.gif) top repeat-x; height:56px;}
+.menu ul { padding:15px 0 0 0; margin:0; list-style:none; border:0;}
+.menu ul li { text-align:center; border-right:1px solid #4d4d4d; float:left; margin:0; padding:0 10px;}
+.menu ul li a { float:left; text-align:center; padding:14px 0; margin:0; color:#fff; font:normal 11px  Tahoma, Geneva, sans-serif; text-decoration:none;}
+.menu ul li a span { padding:14px 10px; margin:0; background:none;}
+.menu ul li a:hover { color:#000; background:url(images/r_menu.gif) no-repeat right top;}
+.menu ul li a:hover span {color:#000; background:url(images/l_menu.gif) no-repeat left top;}
+.menu ul li a.active {color:#000; background:url(images/r_menu.gif) no-repeat right top;}
+.menu ul li a.active span {color:#000; background:url(images/l_menu.gif) no-repeat left top;}
+/* header_text */
+.header_text2 { margin:0 auto; padding:0; width:958px; background:#fff; height:126px; border-bottom:1px solid #d1d1d1;}
+.header_text2 h2 { width:200px; float:left; font: normal 34px Arial, Helvetica, sans-serif; color:#0287be; margin:0; padding:40px 0 0 30px;}
+.header_text2 p{ width:670px; float:right; font: normal 13px Arial, Helvetica, sans-serif; color:#666; margin:0; padding:45px 20px 0 0;}
+.header_text { height:270px; margin:0 auto; padding:0; width:958px; background:#fff;}
+.header_text .div .left1 { float:left; width:475px; padding:0; margin:0 auto; }
+.header_text .div .left1 h2 {font:normal 34px  Arial, Helvetica, sans-serif; color:#535353;  padding:30px 0 0 45px; margin:0;}
+.header_text .div .left1 h2 span { color:#0287be;} 
+.header_text p { font:normal 13px  Arial, Helvetica, sans-serif; color:#000; padding:10px 0 0 45px; margin:0; line-height:1.8em;}
+/*top_header*/
+.top_header { height:174px; width:958px; background:url(images/header_bottom_bg.gif) top repeat-x; margin:0 auto; padding:0;}
+.top_header h2 { font: normal 24px Arial, Helvetica, sans-serif; color:#f3f4f4; padding:10px 10px; margin:0;}
+.top_header p { font: normal 11px Arial, Helvetica, sans-serif; color:#f3f4f4; margin:3px 0; padding:7px 10px;}
+.top_header p.backg { background:#0b618c; font: normal 11px Arial, Helvetica, sans-serif; color:#f3f4f4; margin:3px 5px; padding:2px 10px;}
+.top_header a { color:#0385bb; text-decoration:underline; float:right;}
+.top_header .bloga { width:277px; float:left; margin:15px 15px; padding:0;}
+.top_header .bloga2 { width:277px; border-left:1px solid #3b738f; border-right:1px solid #3b738f; float:left; margin:15px 15px; padding:0;}
+/* body*/
+.body { width:958px; margin:0 auto; padding:0; }
+.body h2 { font: normal 24px Arial, Helvetica, sans-serif; color:#6f6f6f; padding:10px; margin:0; border-bottom:1px solid #c5c5c5;}
+.body h3 {font: normal 24px Arial, Helvetica, sans-serif; color:#3e4f59; padding:10px; margin:0; border-bottom:1px solid #dfdfdf;}
+.body p { font: normal 12px Arial, Helvetica, sans-serif; color:#6f6f6f; padding:5px 10px; margin:0; line-height:1.8em;}
+.body p span { font: bold 17px Arial, Helvetica, sans-serif; color:#666666; text-transform:uppercase; padding:5px 0; margin:0;}
+.body a { font: bold 13px Arial, Helvetica, sans-serif; color:#3f91b4; text-decoration:underline;}
+.body em { font: normal 11px Arial, Helvetica, sans-serif; line-height:1.8em;}
+.body img.floated { float:left; margin:10px 15px; padding:0;}
+.body .left1 { width:279px; float:left; margin:0; padding:20px;}
+.body .right1 { width:596px; float:left; margin:20px !important; margin:20px 10px 20px 20px; padding:0;}
+.body .bgg1 {background:url(images/bg_body1.gif) top repeat-y; padding:0; margin:0; width:958px;}
+.body .bgg2 {background:url(images/body2_bg.gif) left top repeat-y; padding:0; margin:0; width:958px; }
+.body .left2 { width:598px; float:left; margin:20px !important; margin:20px 20px 20px 10px; padding:0;}
+.body .left2 .portfolio { width:150px; float:left; margin:10px 10px; padding:0;}
+.body .left2 .portfolio a { text-decoration:none; font: bold 11px Tahoma, Geneva, sans-serif; color:#4a4a4a; padding:3px 5px; margin:2px 3px; background:#d9d9d9; border-left:1px solid #e2e2e2; border-top:1px solid #d1d1d1;}
+.body .left2 .portfolio a:hover { color:#529cbb;}
+.body .right2 { width:279px; float:left; margin:0; padding:20px;}
+.body .right2 ul { font: normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; margin:5px 15px; padding:0; list-style:none;}
+.body .right2 li { background:#ececec url(images/right2_bg_ul_li.gif) left no-repeat; margin:5px 2px; padding:5px 10px;}
+.body .right2 a { font: normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; text-decoration:none;}
+.body .right2 a:hover { color:#3f91b4; text-decoration:underline;}
+
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * { color:#2e2e2e;}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 0;}
+#contactform label { float:left; margin:0; width:80px; display:block; padding:5px 0; font:normal 11px Tahoma, Geneva, sans-serif; color:#6e6e6e; text-transform:capitalize;}
+#contactform label span {  font:normal 10px Arial, Helvetica, sans-serif;}
+#contactform input.text { width:400px; border:1px solid #c5c5c5; margin:5px 0; padding:5px 2px; height:16px; background:#fff;}
+#contactform textarea { width:400px; border:1px solid #c5c5c5; margin:10px 0; padding:2px; background:#fff; height:300px;}
+#contactform li.buttons input { padding:3px 0; margin:0 0 0 80px; border:0; color:#FFF;}
+p.response { text-align:center; color:#F00; font:bold 11px Arial, Helvetica, sans-serif; line-height:1.8em; width:auto;}
+
+/********** footer **********/
+.footer {  margin:0 auto; padding:0; background: url(images/foote_bg.gif) top no-repeat; height:100px;}
+.footer_resize { width:940px; margin:0 auto; padding:10px 0 0 0;}
+.footer ul { margin:0; padding:25px 10px; list-style:none; float:left;}
+.footer ul li { margin:0; padding:0 10px; float:left;}
+.footer img { margin:5px 5px; padding:0;}
+.footer p { margin:0; padding:25px 20px; float:right; color:#9eaebd; font:normal 11px  Arial, Helvetica, sans-serif; line-height:1.8em;}
+.footer a { color:#3895d5; font:normal 11px  Tahoma, Geneva, sans-serif; text-decoration:none; line-height:1.8em;}
+.footer a:hover { text-decoration:underline;}
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border-top:1px solid #cecece; padding:0; margin:8px 0; background:none;}
+li2.bg2, .bg2 { clear:both; border-top:1px dashed #c7c7c7; padding:0; margin:15px 0; background:none;}
