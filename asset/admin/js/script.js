@@ -1,5 +1,5 @@
 $(function () {
-
+	
 	// Notification Close Button
 	$(".close-notification").click(
 		function () {
