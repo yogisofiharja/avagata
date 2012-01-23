@@ -23,7 +23,7 @@ class Get extends CI_Controller {
 		if($is_logged_in==true){
 		}else
 		{
-		      redirect('admin/login');
+		      redirect('admin/login/index');
 		}
 	}
 	public function index(){

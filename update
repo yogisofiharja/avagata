@@ -1,0 +1,9 @@
+#!/bin/bash
+
+git add .
+
+echo "masukan pesan :"
+read PESAN
+
+git commit -m "$PESAN"
+git push origin master
