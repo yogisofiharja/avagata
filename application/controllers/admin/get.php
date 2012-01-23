@@ -37,4 +37,15 @@ class Get extends CI_Controller {
 		$data['list_kategori']= $kategori->all();
 		load_template_admin('admin/kategori', $data);
 	}
+	public function hapus_kategori($id){
+		$kategori = new Kategori_model();
+		$kategori->delete($id);
+		redirect('admin/get/kategori');
+	}
+	public function update_kategori($id){
+		$kategori = new Kategori_model();
+		$kategori->get_by('id_kat', $id);	
+		load_template_admin('admin/update_kategori', $kategori);
+	}
+	
 }

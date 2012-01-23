@@ -32,7 +32,7 @@ class Post extends CI_Controller {
 		$kategori=new Kategori_model();
 		$kategori->nama_kat=$this->input->post('nama_kat');
 		$kategori->save();
-		redirect('admin/get/index');
+		redirect('admin/get/kategori');
 	}
 	public function tambah_post(){
 		$postingan = new Post_model();
@@ -41,7 +41,14 @@ class Post extends CI_Controller {
 		$postingan->judul_post=$this->input->post('judul_post');
 		$postingan->konten_post=$this->input->post('konten_post');
 		$postingan->status=2;
+		$postingan->save();
 		redirect('admin/get/index');
+	}
+	public function update_kategori($id){
+		$kategori = new Kategori_model();
+		$kategori->nama_kat=$this->input->post['nama_kat'];
+		$kategori->update();
+		redirect('admin/get/kategori');
 	}
 	
 }

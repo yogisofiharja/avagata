@@ -9,7 +9,7 @@ class Kategori_model extends CI_Model{
 	      return $q->result();
 	}
 	function get_by($key, $value){
-	      $q=$this->db->get_where('kategori', array($key->$value));
+	      $q=$this->db->get_where('kategori', array($key=>$value));
 	      $data=$q->result();
 	      $this->id_kat=$data[0]->id_kat;
 	      $this->nama_kat=$data[0]->nama_kat;
