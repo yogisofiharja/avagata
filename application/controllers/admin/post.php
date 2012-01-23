@@ -42,11 +42,12 @@ class Post extends CI_Controller {
 		$postingan->konten_post=$this->input->post('konten_post');
 		$postingan->status=2;
 		$postingan->save();
-		redirect('admin/get/index');
+		redirect('admin/get/post');
 	}
 	public function update_kategori($id){
 		$kategori = new Kategori_model();
-		$kategori->nama_kat=$this->input->post['nama_kat'];
+		$kategori->nama_kat=$this->input->post('nama_kat');
+		$kategori->id_kat=$this->input->post('id_kat');
 		$kategori->update();
 		redirect('admin/get/kategori');
 	}

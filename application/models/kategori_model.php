@@ -28,7 +28,7 @@ class Kategori_model extends CI_Model{
 	       $data=array(
 		    'nama_kat' => $this->nama_kat
 	      );
-	      $this->db->where('id_kat',$id);
+	      $this->db->where('id_kat',$this->id_kat);
 	      $this->db->update('kategori', $data);
 	}
 }

@@ -13,6 +13,7 @@
 					</dt>
 					<dd>
 						<input type="text" class="small" name="nama_kat" value="<?php echo $nama_kat;?>">
+						<input type="hidden" name="id_kat" value="<?php echo $id_kat;?>">
 						<p>Masukkan nama Kategori</p>
 					</dd>
 					

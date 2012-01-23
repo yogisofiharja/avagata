@@ -30,7 +30,7 @@
 					<ul>						
 						<li><a href="#" title="">Add Post</a></li>
 						<li><a href="#" title="">Edit Post</a></li>
-						<li><a href="<?php echo base_url('admin/get/tambah_kategori');?>" title="Your Categories">Categories</a></li>
+						<li><a href="<?php echo base_url('admin/get/kategori');?>" title="Your Categories">Categories</a></li>
 						
 					</ul>
 				</li>

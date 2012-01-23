@@ -47,5 +47,15 @@ class Get extends CI_Controller {
 		$kategori->get_by('id_kat', $id);	
 		load_template_admin('admin/update_kategori', $kategori);
 	}
+	public function post(){
+		$postingan = new Post_model();
+		$data['list_post']=$postingan->all();
+		load_template_admin('admin/post', $data);
+	}
+	public function tambah_post(){
+		$kategori = new Kategori_model();
+		$data['list_kategori']= $kategori->all();
+		load_template_admin('admin/tambah_post', $data);		
+	}
 	
 }
