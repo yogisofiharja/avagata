@@ -20,11 +20,28 @@ class Post extends CI_Controller {
 		}
 	}
 	public function tambah_user(){
-		$data= new User_model();
-		$data->username=$this->input->post('username');
-		$data->password=md5($this->input->post('password'));
-		$query=$this->user->save();
-		
+		$user= new User_model();
+		$user->username=$this->input->post('username');
+		$user->password=md5($this->input->post('password'));
+		$user->level=2;
+		$user->save();
+		redirect('admin/get/index');		
+	}
+	
+	public function tambah_kategori(){
+		$kategori=new Kategori_model();
+		$kategori->nama_kat=$this->input->post('nama_kat');
+		$kategori->save();
+		redirect('admin/get/index');
+	}
+	public function tambah_post(){
+		$postingan = new Post_model();
+		$postingan->id_user=$this->session->userdata('id_user');
+		$postingan->id_kat=$this->input->post('id_kat');
+		$postingan->judul_post=$this->input->post('judul_post');
+		$postingan->konten_post=$this->input->post('konten_post');
+		$postingan->status=2;
+		redirect('admin/get/index');
 	}
 	
 }

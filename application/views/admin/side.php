@@ -26,16 +26,25 @@
 			<ul>
 				<!-- Use class .current to open submenu on page load -->
 				<li class="current">
-					<a href="#" title="" class="projects">Post</a><span title="Unposted Post">3</span>
+					<a href="#" title="" class="projects">Post</a>
 					<ul>						
 						<li><a href="#" title="">Add Post</a></li>
 						<li><a href="#" title="">Edit Post</a></li>
-						<li><a href="#" title="">Categories</a></li>
+						<li><a href="<?php echo base_url('admin/get/tambah_kategori');?>" title="Your Categories">Categories</a></li>
 						
 					</ul>
 				</li>
 				<li>
-					<a href="#" title="" class="products">Comments</a><span title="Pending Comments">3</span>					
+					<a href="#" title="" class="articles">User</a>
+					<ul>						
+						<li><a href="#" title="">Add User</a></li>
+						<li><a href="#" title="">Update User</a></li>
+						<li><a href="#" title="">Update Password</a></li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="#" title="" class="products">Comments</a>				
 				</li>
 				<li>
 					<a href="#" title="" class="events">Events</a>

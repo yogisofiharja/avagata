@@ -6,19 +6,7 @@
 		<!-- Note that only 1st article need clearfix class for clearing -->
 		<article class="full-block clearfix">
 		
-			<!-- Article Header -->
-			<header>
-				<h2>Chromatron Admin Theme</h2>
-				<!-- Article Header Tab Navigation -->
-				<nav>
-					<ul class="tab-switch">
-						<li><a class="default-tab" href="#tab1" rel="tooltip" title="Switch to next tab">Basic Typo</a></li>
-						<li><a href="#tab2">Table and form</a></li>
-					</ul>
-				</nav>
-				<!-- /Article Header Tab Navigation -->
-			</header>
-			<!-- /Article Header -->
+			
 			
 			<!-- Article Content -->
 			<section>
@@ -715,103 +703,7 @@
 					<!-- /Side Tab Content #sidetab1 -->
 					
 					<!-- Side Tab Content #sidetab2 -->
-					<div class="sidetab" id="sidetab2">
-						<h3>Form</h3>
-						<form>
-							<!-- Inputs -->
-							<!-- Use class .small, .medium or .large for predefined size -->
-							<fieldset>
-								<legend>Legend</legend>
-								<dl>
-									<dt>
-										<label>Short Input</label>
-									</dt>
-									<dd>
-										<input type="text" class="small">
-										<p>Short description of event</p>
-									</dd>
-									<dt>
-										<label>Medium Input</label>
-									</dt>
-									<dd>
-										<input type="text" class="medium">
-									</dd>
-									<dt>
-										<label>Focused Input</label>
-									</dt>
-									<dd>
-										<input type="text" class="medium">
-									</dd>
-									<dt>
-										<label>Valid Input</label>
-									</dt>
-									<dd>
-										<input type="text" class="medium valid">
-										<span class="valid-side-note">Valid text</span>
-									</dd>
-									<dt>
-										<label>Invalid Input</label>
-									</dt>
-									<dd>
-										<input type="text" class="medium invalid">
-										<span class="invalid-side-note">Invalid text</span>
-									</dd>
-									<dt>
-										<label>Long text input</label>
-									</dt>
-									<dd>
-										<input type="text" class="large">
-										<p>Short description of event</p>
-									</dd>
-									<dt>
-										<label>Textarea</label>
-									</dt>
-									<dd>
-										<!-- Use class .wysiwyg for jQuery jWYSIWYG initiation -->
-										<textarea rows="5" cols="40" class="wysiwyg large"></textarea>
-										<p>Short description of event</p>
-									</dd>
-								</dl>
-							</fieldset>
-							<fieldset>
-								<legend>Check-in some of these</legend>
-								<dl>
-									<dt class="checkbox"><label>Checkbox A</label></dt>
-									<dd><input type="checkbox"></dd>
-									<dt class="checkbox"><label>Checkbox B</label></dt>
-									<dd><input type="checkbox"></dd>
-									<dt class="checkbox"><label>Checkbox C</label></dt>
-									<dd><input type="checkbox"></dd>
-								</dl>
-							</fieldset>
-							<fieldset>
-								<legend>Choose one of these</legend>
-								<dl>
-									<dt class="radio"><label>Option 1</label></dt>
-									<dd><input type="radio" name="test"></dd>
-									<dt class="radio"><label>Option 2</label></dt>
-									<dd><input type="radio" name="test"></dd>
-									<dt class="radio"><label>Option 3</label></dt>
-									<dd><input type="radio" name="test"></dd>
-								</dl>
-							</fieldset>
-							<fieldset>
-								<legend>Choose one of these</legend>
-								<dl>
-									<dt>&nbsp;</dt>
-									<dd>
-										<select name="actions">
-											<option selected>Choose an action</option>
-											<option value="e">Edit</option>
-											<option value="r">Remove</option>
-											<option value="x">Export</option>
-										</select>
-									</dd>
-								</dl>
-							</fieldset>
-							<button type="submit">Submit</button> or <a href="#">Cancel</a>
-						</form>
-					</div>
+					
 					<!-- /Side Tab Content #sidetab2 -->
 					
 				</div>
@@ -1343,54 +1235,4 @@
 	</section>
 	<!-- /Main Content -->
        
-	<!-- JS Libs at the end for faster loading -->
-	<script src="<?php echo base_url()?>asset/admin/js/jquery/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo base_url()?>asset/admin/js/jquery/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
-	<script src="<?php echo base_url()?>asset/admin/tiny_mce/jquery.tinymce.js"></script>
-	<script src="<?php echo base_url()?>asset/admin/js/libs/selectivizr.js"></script>
-	<script src="<?php echo base_url()?>asset/admin/js/jquery/jquery.facebox.js"></script>
-	<script src="<?php echo base_url()?>asset/admin/js/jquery/jquery.tipsy.js"></script>
-	<script src="<?php echo base_url()?>asset/admin/js/jquery/jquery.wysiwyg.js"></script>
-	<script src="<?php echo base_url()?>asset/admin/js/jquery/jquery.datatables.js"></script>
-	<script src="<?php echo base_url()?>asset/admin/js/script.js"></script>
-	<script type="text/javascript">
-	  $().ready(function() {
-		$('textarea.tinymce').tinymce({
-			// Location of TinyMCE script
-			script_url : '<?php echo base_url()?>/asset/admin/tiny_mce/tiny_mce.js',
-
-			// General options
-			theme : "advanced",
-			plugins : "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
-
-			// Theme options
-			theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect",
-			theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,|,insertdate,inserttime,preview,|,forecolor,backcolor",
-			theme_advanced_buttons3 : "tablecontrols,|,hr,removeformat,visualaid,|,sub,sup,|,charmap,emotions,iespell,media,advhr,|,print,|,ltr,rtl,|,fullscreen",
-			theme_advanced_buttons4 : "insertlayer,moveforward,movebackward,absolute,|,styleprops,|,cite,abbr,acronym,del,ins,attribs,|,visualchars,nonbreaking,template,pagebreak",
-			theme_advanced_toolbar_location : "top",
-			theme_advanced_toolbar_align : "left",
-			theme_advanced_statusbar_location : "bottom",
-			theme_advanced_resizing : true,
-
-			// Example content CSS (should be your site CSS)
-			content_css : "css/content.css",
-
-			// Drop lists for link/image/media/template dialogs
-			template_external_list_url : "lists/template_list.js",
-			external_link_list_url : "lists/link_list.js",
-			external_image_list_url : "lists/image_list.js",
-			media_external_list_url : "lists/media_list.js",
-
-			// Replace values for the template plugin
-			template_replace_values : {
-				username : "Some User",
-				staffid : "991234"
-			}
-		});
-	});
-        </script>
-
-</body>
-
-</html>
+	

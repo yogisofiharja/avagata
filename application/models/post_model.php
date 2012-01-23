@@ -27,12 +27,12 @@ class Post_model extends CI_Model{
 	}
 	function save(){
 	      $data=array(
-		    'id_user' => $this->id_user;
-		    'id_kat' => $this->id_kat;
-		    'judul_post' => $this->judul_post;
-		    'konten_post' => $this->konten_post;
-		    'tanggal_post' => $this->tanggal_post;
-		    'status' => $this->status;
+		    'id_user' => $this->id_user,
+		    'id_kat' => $this->id_kat,
+		    'judul_post' => $this->judul_post,
+		    'konten_post' => $this->konten_post,
+		    'tanggal_post' => $this->tanggal_post,
+		    'status' => $this->status
 	      );
 	      $this->db->insert('post', $data);
 	}
@@ -41,14 +41,14 @@ class Post_model extends CI_Model{
 	}
 	function update(){
 	      $data=array(
-		    'id_user' => $this->id_user;
-		    'id_kat' => $this->id_kat;
-		    'judul_post' => $this->judul_post;
-		    'konten_post' => $this->konten_post;
-		    'tanggal_post' => $this->tanggal_post;
-		    'status' => $this->status;
+		    'id_user' => $this->id_user,
+		    'id_kat' => $this->id_kat,
+		    'judul_post' => $this->judul_post,
+		    'konten_post' => $this->konten_post,
+		    'tanggal_post' => $this->tanggal_post,
+		    'status' => $this->status
 	      );
-	      $this->db->where('id_post'=>$id);
+	      $this->db->where('id_post',$id);
 	      $this->db->update('post', $data);
 	}
 }

@@ -21,9 +21,9 @@ class User_model extends CI_Model{
 	}
 	function save(){
 	      $data=array(
-		    'username' => $this->username;
-		    'password' => $this->password;
-		    'level' => $this->level;
+		    'username' => $this->username,
+		    'password' => $this->password,
+		    'level' => $this->level
 	      );
 	      $this->db->insert('kategori', $data);
 	}
@@ -32,17 +32,17 @@ class User_model extends CI_Model{
 	}
 	function update(){
 	       $data=array(
-		    'username' => $this->username;
-		    'level' => $this->level;
+		    'username' => $this->username,
+		    'level' => $this->level
 	      );
-	      $this->db->where('id_user'=>$id);
+	      $this->db->where('id_user',$id);
 	      $this->db->update('user', $data);
 	}
 	function update_password(){
 	       $data=array(
-		    'password' => $this->password;
+		    'password' => $this->password
 	      );
-	      $this->db->where('id_user'=>$id);
+	      $this->db->where('id_user',$id);
 	      $this->db->update('user', $data);
 	}
 	function ceklogin()

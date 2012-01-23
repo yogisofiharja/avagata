@@ -17,7 +17,7 @@ class Kategori_model extends CI_Model{
 	}
 	function save(){
 	      $data=array(
-		    'nama_kat' => $this->nama_kat;
+		    'nama_kat' => $this->nama_kat
 	      );
 	      $this->db->insert('kategori', $data);
 	}
@@ -26,9 +26,9 @@ class Kategori_model extends CI_Model{
 	}
 	function update(){
 	       $data=array(
-		    'nama_kat' => $this->nama_kat;
+		    'nama_kat' => $this->nama_kat
 	      );
-	      $this->db->where('id_kat'=>$id);
+	      $this->db->where('id_kat',$id);
 	      $this->db->update('kategori', $data);
 	}
 }

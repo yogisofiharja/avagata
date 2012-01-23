@@ -33,8 +33,6 @@ class Get extends CI_Controller {
 		load_template_admin('admin/tambah_kategori');
 	}
 	public function kategori(){
-		$kategori = new Kategori_model();
-		$data['list_kategori']= $kategori->all();
-		load_template_admin('admin/kategori', $data);
+		load_template_admin('admin/kategori');
 	}
 }

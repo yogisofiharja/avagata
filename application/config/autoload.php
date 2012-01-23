@@ -64,7 +64,7 @@ $autoload['libraries'] = array('database', 'session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','form', 'html', 'template_loader');
+$autoload['helper'] = array('url','form', 'html', 'template_loader', 'date');
 
 
 /*
@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('post_model', 'user_model', 'komen_model', 'kategori_model');
+$autoload['model'] = array('post_model', 'user_model', 'kategori_model');
 
 
 /* End of file autoload.php */
