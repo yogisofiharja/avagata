@@ -52,10 +52,14 @@
 		<!-- /Login box -->
 	
 		<!-- Notification -->
-		<div id="notif_login" class="notification success">
+		<?php
+		if ($stat == 'error'){
+		?>
+		<div id="notif_login" class="notification error">
 			<a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>
-			<p>asdfadsasdf</p>
+			<p>Maaf Username atau Password yang anda masukkan tidak sesuai</p>
 		</div>
+		<?php } ?>
 		<!-- /Notification -->
 		
 	</section>

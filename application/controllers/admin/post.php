@@ -33,7 +33,7 @@ class Post extends CI_Controller {
 		}
 		else
 		{
-			$this->index();
+			redirect("admin/login/index/error");
 		}
 	}
 }
