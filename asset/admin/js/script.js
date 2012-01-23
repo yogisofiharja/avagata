@@ -7,6 +7,8 @@ $(function () {
 			return false;
 		}
 	);
+	
+	$("#notif_login").hide();
 
 	// jQuery Tipsy
 	$('[rel=tooltip], #main-nav span, .loader').tipsy({gravity:'s', fade:true}); // Tooltip Gravity Orientation: n | w | e | s
