@@ -15,7 +15,7 @@
 				<em>Administrator</em>
 				<ul>
 					<li><a class="button-link" href="#" title="This is my title!" rel="tooltip">view website</a></li>
-					<li><a class="button-link" href="#" title="And this is Sparta!" rel="tooltip">logout</a></li>
+					<li><a class="button-link" href="<?php echo base_url('admin/logout')?>" title="Log Out" rel="tooltip">logout</a></li>
 				</ul>
 			</div>
 		</section>

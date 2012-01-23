@@ -29,7 +29,7 @@ class Post extends CI_Controller {
 			'username'=>$this->input->post('username'),
 			'is_logged_in'=>true);
 			$this->session->set_userdata($session);
-			redirect('admin/get/beranda');
+			redirect('admin/get/index');
 		}
 		else
 		{
