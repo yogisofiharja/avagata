@@ -52,9 +52,9 @@
 		<!-- /Login box -->
 	
 		<!-- Notification -->
-		<div id="notif_login" class="notification success">
+		<div class="notification error">
 			<a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>
-			<p>asdfadsasdf</p>
+			<p><strong>Error notification</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate, sapien quis fermentum luctus, libero.</p>
 		</div>
 		<!-- /Notification -->
 		
