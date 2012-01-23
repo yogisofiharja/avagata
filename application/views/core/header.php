@@ -39,7 +39,7 @@ p#controls { margin:0; position:relative; }
 <div class="main">
   <div class="header">
     <div class="block_header">
-      <div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>/asset/web/images/logo.gif" width="458" height="129" border="0" alt="logo" /></a></div>
+      <div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>/asset/web/images/logo.png" width="458" height="129" border="0" alt="logo" /></a></div>
       <div class="search">
         <form id="form1" name="form1" method="post" action="">
           <label>
