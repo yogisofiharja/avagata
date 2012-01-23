@@ -17,6 +17,10 @@ class Get extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index(){
+		$this->load->view('admin/login');		
+	}
+	public function beranda(){
 		
+		load_template_admin('admin/konten');
 	}
 }

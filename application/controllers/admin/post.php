@@ -20,4 +20,20 @@ class Post extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+	public function ceklogin()
+	{
+		$this->load->model('user');
+		$query=$this->user->ceklogin();
+		if($query){
+			$session=array(
+			'username'=>$this->input->post('username'),
+			'is_logged_in'=>true);
+			$this->session->set_userdata($session);
+			redirect('admin/get/beranda');
+		}
+		else
+		{
+			$this->index();
+		}
+	}
 }
