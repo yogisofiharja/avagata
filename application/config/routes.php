@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = "beranda";
+$route['admin'] = "admin/get";
 $route['404_override'] = '';
 
 
