@@ -3,19 +3,19 @@
 	<section role="navigation">
 		<!-- Header with logo and headline -->
 		<header>
-			<a href="index.html" title="Back to Homepage"></a>
-			<h1>Lorem ipsum dolor sit amet!</h1>
+			<a href="<?php echo base_url()?>" title="Avagata"></a>
+			<h1>Simple Yet Strong</h1>
 		</header>
 		
 		<!-- User Info -->
 		<section id="user-info">
-			<img src="img/sample_user.png" alt="Sample User Avatar">
+			<img src="<?php echo base_url()?>/asset/admin/img/sample_user.png" alt="Sample User Avatar">
 			<div>
-				<a href="#" title="Account Settings and Profile Page">Joe Tester</a>
+				<a href="#" title="Account Settings and Profile Page"><?php echo $this->session->userdata('username');?></a>
 				<em>Administrator</em>
 				<ul>
-					<li><a class="button-link" href="#" title="This is my title!" rel="tooltip">view website</a></li>
-					<li><a class="button-link" href="<?php echo base_url('admin/logout')?>" title="Log Out" rel="tooltip">logout</a></li>
+					<li><a class="button-link" href="#" title="Edit Your Profile" rel="tooltip">Edit Profile</a></li>
+					<li><a class="button-link" href="<?php echo base_url('admin/logout')?>" title="Log Out" rel="tooltip">Logout</a></li>
 				</ul>
 			</div>
 		</section>
@@ -27,7 +27,7 @@
 				<li><a href="index.html" title="" class="dashboard no-submenu">Dashboard</a></li> <!-- Use class .no-submenu to open link instead of a sub menu-->
 				<!-- Use class .current to open submenu on page load -->
 				<li class="current">
-					<a href="#" title="" class="projects">Projects</a><span title="You have 3 new tasks">3</span>
+					<a href="#" title="" class="projects">Post</a><span title="You have 3 new tasks">3</span>
 					<ul>
 						<li><a href="#" title="">Add Project</a></li>
 						<li><a href="#" title="">Edit Project</a></li>
