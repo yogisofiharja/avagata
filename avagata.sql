@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 19, 2012 at 10:43 PM
+-- Generation Time: Jan 24, 2012 at 05:10 AM
 -- Server version: 5.1.56
 -- PHP Version: 5.3.6
 
@@ -25,28 +25,19 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `kategori`
 --
-create database avagata;
-use avagata;
+
 CREATE TABLE IF NOT EXISTS `kategori` (
   `id_kat` int(11) NOT NULL AUTO_INCREMENT,
   `nama_kat` varchar(200) NOT NULL,
   PRIMARY KEY (`id_kat`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
--- Table structure for table `komen`
+-- Dumping data for table `kategori`
 --
 
-CREATE TABLE IF NOT EXISTS `komen` (
-  `id_komen` int(11) NOT NULL AUTO_INCREMENT,
-  `id_user` int(11) NOT NULL,
-  `id_post` int(11) NOT NULL,
-  `isi_komen` text NOT NULL,
-  `tanggal_komen` date NOT NULL,
-  PRIMARY KEY (`id_komen`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+INSERT INTO `kategori` (`id_kat`, `nama_kat`) VALUES
+(5, 'Documentation');
 
 -- --------------------------------------------------------
 
@@ -57,7 +48,6 @@ CREATE TABLE IF NOT EXISTS `komen` (
 CREATE TABLE IF NOT EXISTS `media` (
   `id_media` int(11) NOT NULL AUTO_INCREMENT,
   `media` varchar(200) NOT NULL,
-  `deskripsi` text NOT NULL,
   PRIMARY KEY (`id_media`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -73,22 +63,9 @@ CREATE TABLE IF NOT EXISTS `post` (
   `id_kat` int(11) DEFAULT NULL,
   `judul_post` varchar(200) NOT NULL,
   `konten_post` text NOT NULL,
-  `tanggal_post` date NOT NULL,
+  `tanggal_post` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` int(2) NOT NULL,
   PRIMARY KEY (`id_post`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `post_media`
---
-
-CREATE TABLE IF NOT EXISTS `post_media` (
-  `id_pm` int(11) NOT NULL AUTO_INCREMENT,
-  `id_media` int(11) NOT NULL,
-  `id_post` int(11) NOT NULL,
-  PRIMARY KEY (`id_pm`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -104,7 +81,14 @@ CREATE TABLE IF NOT EXISTS `user` (
   `level` int(5) NOT NULL,
   `picture` varchar(200) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `username`, `password`, `level`, `picture`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
