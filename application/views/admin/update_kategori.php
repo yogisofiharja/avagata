@@ -2,7 +2,7 @@
 	<!-- Full Content Block -->
 	<!-- Note that only 1st article need clearfix class for clearing -->
 
-		<form action="<?php echo base_url('admin/post/update_kategori')?>" method="POST">
+		<form action="<?php echo base_url('admin/post/update_kategori');?>" method="POST">
 			<!-- Inputs -->
 			<!-- Use class .small, .medium or .large for predefined size -->
 			<fieldset>
@@ -18,6 +18,6 @@
 					
 				</dl>
 			</fieldset>				
-			<button type="submit">Submit</button> or <a href="#">Cancel</a>
+			<button type="submit">Update</button> or <a href="#">Cancel</a>
 		</form>		
 	
