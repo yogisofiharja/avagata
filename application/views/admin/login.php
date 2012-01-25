@@ -26,7 +26,7 @@
 	
 		<!-- Login box -->
 		<article id="login-box">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam. </p>
+			<p>Silahkan Masukkan Username dan Password Anda Pada Kolom Yang Telah Disediakan.</p>
 		
 			<form action="<?php echo base_url('admin/post/ceklogin')?>" method="POST">
 				<fieldset>
