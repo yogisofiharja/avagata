@@ -15,7 +15,7 @@
 		<?php foreach($list_post as $row){?>
 		<tr class="gradeX">
 			
-			<td><?php echo $row->id_kat;?></td>
+			<td><?php echo $row->nama_kat;?></td>
 			<td><?php echo $row->judul_post;?></td>
 			<td><?php echo $row->tanggal_post;?></td>
 			<td><?php if($row->status==1){

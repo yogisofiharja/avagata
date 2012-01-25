@@ -28,8 +28,8 @@
 				<li class="current">
 					<a href="#" title="" class="projects">Post</a>
 					<ul>						
-						<li><a href="<?php echo base_url('admin/post/post');?>" title="">Post</a></li>
-						<li><a href="<?php echo base_url('admin/get/kategori');?>" title="Your Categories">Categories</a></li>
+						<li><a class="no-submenu" href="<?php echo base_url('admin/get/post');?>" title="">Post</a></li>
+						<li><a class="no-submenu" href="<?php echo base_url('admin/get/kategori');?>" title="Your Categories">Categories</a></li>
 						
 					</ul>
 				</li>

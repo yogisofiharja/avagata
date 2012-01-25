@@ -1,5 +1,6 @@
 <?php 
 class Post_model extends CI_Model{
+	var $nama_kat='';
 	var $id_post='';
 	var $id_user='';
 	var $id_kat='';
@@ -10,11 +11,34 @@ class Post_model extends CI_Model{
 
 	function all()
 	{
-	      $q=$this->db->get('post');
+	      $this->db->select(
+		  'kategori.nama_kat,
+		   post.id_post,
+		   post.id_user,
+		   post.id_kat,
+		   post.judul_post,
+		   post.konten_post,
+		   post.tanggal_post,
+		   post.status');
+	      $this->db->from('post');
+	      $this->db->join('kategori', 'kategori.id_kat = post.id_kat');
+	      $q = $this->db->get();
 	      return $q->result();
 	}
 	function get_by($key, $value){
-	      $q=$this->db->get_where('post', array($key->$value));
+	       $this->db->select(
+		  'kategori.nama_kat,
+		   post.id_post,
+		   post.id_user,
+		   post.id_kat,
+		   post.judul_post,
+		   post.konten_post,
+		   post.tanggal_post,
+		   post.status');
+	      $this->db->from('post');
+	      $this->db->join('kategori', 'kategori.id_kat = post.id_kat');
+	      $this->db->where('post', array($key->$value));
+	      $q=$this->db->get();
 	      $data=$q->result();
 	      $this->id_post=$data[0]->id_post;
 	      $this->id_user=$data[0]->id_user;
