@@ -55,5 +55,7 @@ class Get extends CI_Controller {
 		$postingan->delete($id);
 		redirect('admin/get/post');
 	}
-	
+	public function tambah_user(){
+		load_template_admin('admin/tambah_user');
+	}
 }

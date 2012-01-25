@@ -24,6 +24,7 @@ class Post extends CI_Controller {
 		$user->username=$this->input->post('username');
 		$user->password=md5($this->input->post('password'));
 		$user->level=2;
+		$user->picture=$this->input->post('picture');
 		$user->save();
 		redirect('admin/get/index');		
 	}

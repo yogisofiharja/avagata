@@ -25,7 +25,7 @@ class User_model extends CI_Model{
 		    'password' => $this->password,
 		    'level' => $this->level
 	      );
-	      $this->db->insert('kategori', $data);
+	      $this->db->insert('user', $data);
 	}
 	function delete($id){
 	      $this->db->delete('kategori', array('id_kat'=>$id));
