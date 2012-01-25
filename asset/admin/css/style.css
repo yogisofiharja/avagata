@@ -1013,9 +1013,9 @@ body.login { background:#e6e6e6; }
 	background:none;
 }
 .login section[role=main] > a {
-	background:url(../img/logo.png) no-repeat;
-	width:458px;
-	height:129px;
+	background:url(../img/sample_logo.png) no-repeat;
+	width:148px;
+	height:31px;
 	text-indent:-9999em;
 	display:block;
 }

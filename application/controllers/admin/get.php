@@ -12,7 +12,7 @@ class Get extends CI_Controller {
 		}
 	}
 	public function index(){
-		load_template_admin('admin/konten');		
+		redirect('admin/get/post');
 	}
 	public function tambah_kategori(){
 		load_template_admin('admin/tambah_kategori');
