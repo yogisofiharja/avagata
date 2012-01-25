@@ -12,7 +12,7 @@
 				<label>Kategori</label>
 			</dt>								
 			<dd>
-				<select name="kat">
+				<select name="id_kat">
 					<option selected>Pilih Kategori</option>
 					<?php foreach($list_kategori as $row){?>
 					<option value="<?php echo $row->id_kat;?>"><?php echo $row->nama_kat;?></option>	
@@ -21,10 +21,25 @@
 				</select>
 			</dd>
 			<dt>
+				<label>Judul</label>
+			</dt>
+			<dd>
+				<input type="text" class="small" name="judul_post">
+			</dd>
+			<dt>
 				<label>Konten</label>
 			</dt>
 			<dd>
-				<textarea id="elm1" name="elm1" rows="15" cols="80" style="width: 80%" class="tinymce"></textarea>
+				<textarea id="elm1" name="konten_post" rows="15" cols="80" style="width: 80%" class="tinymce"></textarea>
+			</dd>
+			<dt>
+				<label>Post Sekarang?</label>
+			</dt>
+			<dd>
+				<dt class="radio"><label>Ya</label></dt>
+				<dd><input type="radio" name="status" value="1"></dd>
+				<dt class="radio"><label>Tidak</label></dt>
+				<dd><input type="radio" name="status" value="2"></dd>				
 			</dd>
 			
 		</dl>

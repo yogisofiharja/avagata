@@ -28,8 +28,7 @@
 				<li class="current">
 					<a href="#" title="" class="projects">Post</a>
 					<ul>						
-						<li><a href="#" title="">Add Post</a></li>
-						<li><a href="#" title="">Edit Post</a></li>
+						<li><a href="<?php echo base_url('admin/post/post');?>" title="">Post</a></li>
 						<li><a href="<?php echo base_url('admin/get/kategori');?>" title="Your Categories">Categories</a></li>
 						
 					</ul>
@@ -42,10 +41,7 @@
 						<li><a href="#" title="">Update Password</a></li>
 						
 					</ul>
-				</li>
-				<li>
-					<a href="#" title="" class="products">Comments</a>				
-				</li>
+				</li>				
 				<li>
 					<a href="#" title="" class="events">Events</a>
 					<ul>						

@@ -40,7 +40,8 @@ class Post extends CI_Controller {
 		$postingan->id_kat=$this->input->post('id_kat');
 		$postingan->judul_post=$this->input->post('judul_post');
 		$postingan->konten_post=$this->input->post('konten_post');
-		$postingan->status=2;
+		$postingan->tanggal_post=date('Y-m-d', time());
+		$postingan->status=$this->input->post('status');
 		$postingan->save();
 		redirect('admin/get/post');
 	}
