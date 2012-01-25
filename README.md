@@ -11,4 +11,8 @@
 
 ## Description
 
-Avagata adalah sebuah distribusi GNU/Linux yang 
+Avagata adalah sebuah distribusi GNU/Linux yang dibangun untuk membantu proses belajar mengajar dunia pendidikan baik itu
+pendidik maupun peserta didik. Selain didesian untuk membantu pendidikan Avagata juga didesain untuk dapat berjalan pada
+komputer dengan spesifikasi yang cukup rendah jadi setiap lapisan dunia pendidikan dapat menggunakan avagata tanpa harus 
+membeli komputer yang mahal .
+
