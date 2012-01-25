@@ -26,9 +26,9 @@
 			<ul>
 				<!-- Use class .current to open submenu on page load -->
 				<li class="current">
-					<a href="#" title="" class="projects">Post</a>
+					<a href="<?php echo base_url('admin/get/post');?>" title="" class="projects">Post</a>
 					<ul>						
-						<li><a class="no-submenu" href="<?php echo base_url('admin/get/post');?>" title="">Post</a></li>
+						<li><a class="no-submenu" href="<?php echo base_url('admin/get/post');?>" title="Your Post">Post</a></li>
 						<li><a class="no-submenu" href="<?php echo base_url('admin/get/kategori');?>" title="Your Categories">Categories</a></li>
 						
 					</ul>

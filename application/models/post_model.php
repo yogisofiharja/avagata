@@ -37,7 +37,7 @@ class Post_model extends CI_Model{
 		   post.status');
 	      $this->db->from('post');
 	      $this->db->join('kategori', 'kategori.id_kat = post.id_kat');
-	      $this->db->where('post', array($key->$value));
+	      $this->db->where('id_post', $value);
 	      $q=$this->db->get();
 	      $data=$q->result();
 	      $this->id_post=$data[0]->id_post;
@@ -72,7 +72,7 @@ class Post_model extends CI_Model{
 		    'tanggal_post' => $this->tanggal_post,
 		    'status' => $this->status
 	      );
-	      $this->db->where('id_post',$id);
+	      $this->db->where('id_post',$this->id_post);
 	      $this->db->update('post', $data);
 	}
 }

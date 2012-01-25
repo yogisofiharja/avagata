@@ -1,21 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Get extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function __construct(){
 		
 		parent::__construct();
@@ -48,7 +33,6 @@ class Get extends CI_Controller {
 		load_template_admin('admin/update_kategori', $kategori);
 	}
 	public function post(){
-		$kategori = new Kategori_model();
 		$postingan = new Post_model();
 		$data['list_post'] = $postingan->all();	
 		load_template_admin('admin/post', $data);
@@ -57,6 +41,19 @@ class Get extends CI_Controller {
 		$kategori = new Kategori_model();
 		$data['list_kategori']= $kategori->all();
 		load_template_admin('admin/tambah_post', $data);		
+	}
+	public function update_post($id){
+		$kategori = new Kategori_model();
+		$postingan['list_kategori']= $kategori->all();
+		$postingan['post'] = new Post_model();
+		$postingan['post']->get_by('id_post', $id);
+		load_template_admin('admin/update_post', $postingan);
+		
+	}
+	public function hapus_post($id){
+		$postingan = new Post_model();
+		$postingan->delete($id);
+		redirect('admin/get/post');
 	}
 	
 }

@@ -47,10 +47,22 @@ class Post extends CI_Controller {
 	}
 	public function update_kategori($id){
 		$kategori = new Kategori_model();
-		$kategori->nama_kat=$this->input->post('nama_kat');
 		$kategori->id_kat=$this->input->post('id_kat');
+		$kategori->nama_kat=$this->input->post('nama_kat');
 		$kategori->update();
 		redirect('admin/get/kategori');
+	}
+	public function update_post($id){
+		$postingan = new Post_model();
+		$postingan->id_post=$this->input->post('id_post');
+		$postingan->id_user=$this->session->userdata('id_user');
+		$postingan->id_kat=$this->input->post('id_kat');
+		$postingan->judul_post=$this->input->post('judul_post');
+		$postingan->konten_post=$this->input->post('konten_post');
+		$postingan->tanggal_post=date('Y-m-d', time());
+		$postingan->status=$this->input->post('status');
+		$postingan->update();
+		redirect('admin/get/post');
 	}
 	
 }
