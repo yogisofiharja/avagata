@@ -27,7 +27,7 @@ p#controls { margin:0; position:relative; }
   <br/><br/><br/><br/>
 <!--header-->
 <div class="body">
- <center><img src="http://<?php echo base_url()?>asset/web/images/logo.png" width="550" height="150" border="0"/></center>
+ <center><img src="<?php echo base_url()?>asset/web/images/logo.png" width="550" height="150" border="0"/></center>
   <br/><br/><br/><br/>
 <center><h2><font color="white">We Are Under Construction. Opening Soon at 11 February 2012.<br/></font></h2></center> 
 <br/><br/><br/><br/><br/><br/><br/><br/>
