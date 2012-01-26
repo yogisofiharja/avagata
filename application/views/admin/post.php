@@ -1,3 +1,10 @@
+<!-- Article Header -->
+		<header></header>
+		<header>			
+			<h2>Post</h2>
+			</br>
+		</header>
+		<!-- /Article Header -->
 <label>Update Postinganmu atau Tambah Postinganmu <a href="<?php echo base_url();?>admin/get/tambah_post">Di sini</a></label></br>
 <br/><br/><br/>
 <table class="datatable">

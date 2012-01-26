@@ -12,10 +12,3 @@
 		</section>
 		<!-- /Widget Container -->
 	<article class="full-block clearfix">
-<!-- Article Header -->
-		<header></header>
-		<header>			
-			<h2>Administration</h2>
-			</br>
-		</header>
-		<!-- /Article Header -->

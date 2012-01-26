@@ -25,8 +25,8 @@
 		<nav id="main-nav">
 			<ul>
 				<!-- Use class .current to open submenu on page load -->
-				<li class="current">
-					<a href="<?php echo base_url('admin/get/post');?>" title="" class="projects">Post</a>
+				<li>
+					<a  href="<?php echo base_url('admin/get/post');?>" title="">Post</a>
 					<ul>						
 						<li><a class="no-submenu" href="<?php echo base_url('admin/get/post');?>" title="Your Post">Post</a></li>
 						<li><a class="no-submenu" href="<?php echo base_url('admin/get/kategori');?>" title="Your Categories">Categories</a></li>
@@ -34,22 +34,12 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#" title="" class="articles">User</a>
-					<ul>						
-						<li><a class="no-submenu" href="<?php echo base_url('admin/get/tambah_user');?>" title="">Add User</a></li>
-						<li><a class="no-submenu" href="#" title="">Update User</a></li>
-						<li><a class="no-submenu" href="#" title="">Update Password</a></li>
-						
-					</ul>
+					<a  href="<?php echo base_url('admin/get/user');?> " class="no-submenu" title="User" >User</a>
+					
 				</li>				
 				<li>
-					<a href="#" title="" class="events">Events</a>
-					<ul>						
-						<li><a class="no-submenu" href="#" title="">Add Event</a></li>
-						<li><a class="no-submenu" href="#" title="">Edit Event</a></li>						
-					</ul>
-				</li>				
-				<li><a class="no-submenu" href="#" title="" class="gallery">Image Gallery</a></li>				
+					<a href="#" title="" class="no-submenu">Events</a>							
+				<li><a class="no-submenu" href="#" title="">Image Gallery</a></li>				
 			</ul>
 		</nav>
 		<!-- /Main Navigation -->

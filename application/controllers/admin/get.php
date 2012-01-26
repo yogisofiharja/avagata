@@ -58,4 +58,9 @@ class Get extends CI_Controller {
 	public function tambah_user(){
 		load_template_admin('admin/tambah_user');
 	}
+	public function user(){
+		$user = new User_model();
+		$data['list_user']=$user->all();
+		load_template_admin('admin/user', $data);
+	}
 }

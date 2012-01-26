@@ -3,7 +3,7 @@
 <head>
 <title>Avagata EduSystem</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link media="screen" href="http://localhost/avagata//asset/web/style.css" rel="stylesheet" type="text/css" />
+<link media="screen" href="<?php echo base_url()?>asset/web/style.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 .gallery { float:right; width:350px; height:184px; margin:40px 45px 0 0 !important; margin:40px 25px 0 0; }
 #slider { margin:0; padding:0; list-style:none; }
@@ -27,7 +27,7 @@ p#controls { margin:0; position:relative; }
   <br/><br/><br/><br/>
 <!--header-->
 <div class="body">
- <center><img src="http://localhost/avagata//asset/web/images/logo.png" width="550" height="150" border="0"/></center>
+ <center><img src="http://<?php echo base_url()?>asset/web/images/logo.png" width="550" height="150" border="0"/></center>
   <br/><br/><br/><br/>
 <center><h2><font color="white">We Are Under Construction. Opening Soon at 11 February 2012.<br/></font></h2></center> 
 <br/><br/><br/><br/><br/><br/><br/><br/>

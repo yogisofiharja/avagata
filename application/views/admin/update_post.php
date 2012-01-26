@@ -1,4 +1,10 @@
-
+<!-- Article Header -->
+		<header></header>
+		<header>			
+			<h2>Post</h2>
+			</br>
+		</header>
+		<!-- /Article Header -->
 <!-- Full Content Block -->
 <!-- Note that only 1st article need clearfix class for clearing -->
 

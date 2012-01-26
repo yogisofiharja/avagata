@@ -1,3 +1,10 @@
+<!-- Article Header -->
+		<header></header>
+		<header>			
+			<h2>Kategori</h2>
+			</br>
+		</header>
+		<!-- /Article Header -->
 <label>Update Kategori Yang Tersedia atau Tambah Kategori <a href="<?php echo base_url();?>admin/get/tambah_kategori">Di sini</a></label></br>
 <br/><br/><br/>
 <table class="datatable">
