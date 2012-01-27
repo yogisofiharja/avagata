@@ -9,6 +9,7 @@ class Post extends CI_Controller {
 		$query=$this->user_model->ceklogin();
 		if($query){
 			$session=array(
+			'id_user'=>$query->id_user,
 			'username'=>$this->input->post('username'),
 			'is_logged_in'=>true);
 			$this->session->set_userdata($session);
@@ -26,7 +27,7 @@ class Post extends CI_Controller {
 		$user->level=2;
 		$user->picture=$this->input->post('picture');
 		$user->save();
-		redirect('admin/get/index');		
+		redirect('admin/get/user');		
 	}
 	
 	public function tambah_kategori(){
@@ -65,5 +66,36 @@ class Post extends CI_Controller {
 		$postingan->update();
 		redirect('admin/get/post');
 	}
+	/*public function update_password($id){
+		
+		$user = new User_model();
+		$this->db->select(
+			'id_user, password'
+		);
+		$this->db->from('user');
+		$this->db->where('id_user', $id);
+		$this->db->where('password', md5($this->input->post('password')));
+		$q=$this->db->get();
+		$data=$q->result();
+		if(md5($this->input->post('password_baru1'))==md5($this->input->post('password_baru2'))){
+			$user->id_user=$this->input->post('id_user');
+			$user->password=$this->input->post('password_baru1');
+			$user->level=$data->level;
+			$user->picture=$data->picture;
+			$user->update_password();
+			redirect('admin/get/user');
+		}else {
+			redirect('admin/get/update_password/'echo $user->id_user;'/error');
+		}
+		/*if(md5($this->input->post('password'))==$query->password){
+			if(md5($this->input->post('password_baru1'))==md5($this->input->post('password_baru2'))){
+				$user->id_user=$this->input->post('id_user');
+				$user->password=$this->input->post('password_baru1');
+				$user->update_password();
+				redirect('admin/get/user');
+			}
+		}
+		
+	}*/
 	
 }

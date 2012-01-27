@@ -11,7 +11,7 @@ class User_model extends CI_Model{
 	      return $q->result();
 	}
 	function get_by($key, $value){
-	      $q=$this->db->get_where('user', array($key->$value));
+	      $q=$this->db->get_where('user', array($key=>$value));
 	      $data=$q->result();
 	      $this->id_user=$data[0]->id_user;
 	      $this->username=$data[0]->username;
@@ -23,7 +23,8 @@ class User_model extends CI_Model{
 	      $data=array(
 		    'username' => $this->username,
 		    'password' => $this->password,
-		    'level' => $this->level
+		    'level' => $this->level,
+		    'picture'=>$this->picture
 	      );
 	      $this->db->insert('user', $data);
 	}

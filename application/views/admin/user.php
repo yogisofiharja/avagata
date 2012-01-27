@@ -18,7 +18,7 @@
 		<?php foreach($list_user as $row){?>
 		<tr class="gradeX">
 			<td><?php echo $row->username;?></td>
-			<td><a href="<?php echo base_url();?>admin/get/update_user/<?php echo $row->id_user;?>" title="Edit this"><img src="<?php echo base_url();?>asset/admin/img/icons/icon_nav_settings.png"></a> <a href="<?php echo base_url();?>admin/get/hapus_user/<?php echo $row->id_user;?>" title="Delete this"><img src="<?php echo base_url();?>asset/admin/img/icons/icon_error.png"></a></td>			
+			<td><a href="<?php echo base_url();?>admin/get/update_password/<?php echo $row->id_user;?>" title="Edit this"><img src="<?php echo base_url();?>asset/admin/img/icons/icon_nav_settings.png"></a> <a href="<?php echo base_url();?>admin/get/hapus_user/<?php echo $row->id_user;?>" title="Delete this"><img src="<?php echo base_url();?>asset/admin/img/icons/icon_error.png"></a></td>			
 		</tr>
 		<?php }?>
 	</tbody>
