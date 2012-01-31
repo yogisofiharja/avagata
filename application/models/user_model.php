@@ -43,7 +43,7 @@ class User_model extends CI_Model{
 	       $data=array(
 		    'password' => $this->password
 	      );
-	      $this->db->where('id_user',$id);
+	      $this->db->where('id_user',$this->id_user);
 	      $this->db->update('user', $data);
 	}
 	function ceklogin()

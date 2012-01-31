@@ -9,17 +9,19 @@
 <!-- Full Content Block -->
 <!-- Note that only 1st article need clearfix class for clearing -->
 
-<form action="<?php echo base_url('admin/post/update_password')?>" method="POST">
+<!--<form action="<?php echo base_url('admin/post/update_password')?>" method="POST">
+	<!-- Inputs -->
+	<!-- Use class .small, .medium or .large for predefined size 
 	<fieldset>
-		<legend>Ganti Password <?php echo $user->username;?></legend>
+		<legend>Ganti Password <?php echo $username;?></legend>
 		
 		<dl>
 			<dt>
 				<label>Masukkan Password Lama </label>
 			</dt>
 			<dd>
-				<input type="hidden" name="id_user" value="<?php echo $user->id_user;?>">
-				<input type="password" class="small" name="password_lama">
+				<input type="hidden" name="id_user" value="<?php echo $id_user;?>">
+				<input type="password" class="small" name="password">
 			</dd>			
 			<dt>
 				<label>Masukkan Password Baru </label>
@@ -38,17 +40,12 @@
 	<button type="submit">Submit</button> or <a href="#">Cancel</a>
 </form>		
 <?php
-		if ($stat == 'old_pass_error'){
+		if ($stat == 'error'){
 		?>
 		<div id="notif_login" class="notification error">
 			<a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>
 			<p>Password Baru Yang Anda Masukkan Tidak Cocok</p>
 
 		</div>
-		<?php } elseif($stat == "succes_update"){ ?>
-		<div id="notif_login" class="notification succes">
-			<a href="#" class="close-notification" title="Hide Notification" rel="tooltip">x</a>
-			<p>Selamat Password anda telah terganti</p>
-
-		</div>
-<?php } ?>
+		<?php } ?>
+-->

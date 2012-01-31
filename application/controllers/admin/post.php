@@ -66,36 +66,28 @@ class Post extends CI_Controller {
 		$postingan->update();
 		redirect('admin/get/post');
 	}
-	/*public function update_password($id){
+	public function update_password(){
+		$id = $this->input->post("id_user");
+		$pass_lama = $this->input->post("password_lama");
+		$pass_baru1 = $this->input->post("password_baru1");
+		$pass_baru2 = $this->input->post("password_baru2");
 		
-		$user = new User_model();
-		$this->db->select(
-			'id_user, password'
-		);
-		$this->db->from('user');
-		$this->db->where('id_user', $id);
-		$this->db->where('password', md5($this->input->post('password')));
-		$q=$this->db->get();
-		$data=$q->result();
-		if(md5($this->input->post('password_baru1'))==md5($this->input->post('password_baru2'))){
-			$user->id_user=$this->input->post('id_user');
-			$user->password=$this->input->post('password_baru1');
-			$user->level=$data->level;
-			$user->picture=$data->picture;
-			$user->update_password();
-			redirect('admin/get/user');
-		}else {
-			redirect('admin/get/update_password/'echo $user->id_user;'/error');
-		}
-		/*if(md5($this->input->post('password'))==$query->password){
-			if(md5($this->input->post('password_baru1'))==md5($this->input->post('password_baru2'))){
-				$user->id_user=$this->input->post('id_user');
-				$user->password=$this->input->post('password_baru1');
+		$u = new User_model();
+		$user = $u->get_by('id_user',$id);
+		$pass_lama_enc = md5($pass_lama);
+		if ($pass_baru1 == $pass_baru2 ){
+			if ($pass_lama_enc == $user->password){
+				$user->password = md5($pass_baru1);
 				$user->update_password();
-				redirect('admin/get/user');
+				redirect("admin/get/update_password/$id/succes_update");
+			}else{
+				redirect("admin/get/update_password/$id/old_pass_error");	
 			}
+		}else{
+			redirect("/");
 		}
 		
-	}*/
+	}	
+	
 	
 }

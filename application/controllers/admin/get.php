@@ -64,9 +64,18 @@ class Get extends CI_Controller {
 		load_template_admin('admin/user', $data);
 	}
 	public function update_password($id, $stat=NULL){
-		$data['stat']=$stat;
 		$user = new user_model();
 		$user->get_by('id_user', $id);
-		load_template_admin('admin/update_password', $user);
+		$data = array(
+			"stat" => $stat,
+			"user" => $user
+		);
+		load_template_admin('admin/update_password', $data);
 	}
+	public function update_user($id){
+		$user = new user_model();
+		$user->get_by('id_user', $id);
+		load_template_admin('admin/update_user', $user);
+	}
+	
 }
