@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 25, 2012 at 03:12 PM
--- Server version: 5.1.56
--- PHP Version: 5.3.6
+-- Generation Time: Feb 01, 2012 at 01:06 PM
+-- Server version: 5.1.58
+-- PHP Version: 5.3.8-1~dotdeb.2
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `avagata`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `event`
+--
+
+CREATE TABLE IF NOT EXISTS `event` (
+  `id_event` int(3) NOT NULL AUTO_INCREMENT,
+  `nama_event` varchar(50) NOT NULL,
+  `tgl_event` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `tmp_event` varchar(100) NOT NULL,
+  `keterangan` text NOT NULL,
+  PRIMARY KEY (`id_event`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `event`
+--
+
+INSERT INTO `event` (`id_event`, `nama_event`, `tgl_event`, `tmp_event`, `keterangan`) VALUES
+(1, 'kimoi', '2012-02-01 06:01:17', 'kamar', 'aksdf;aklfm;akdsmf;aksdmfsdf');
 
 -- --------------------------------------------------------
 
@@ -90,14 +112,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `level` int(5) NOT NULL,
   `picture` varchar(200) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `level`, `picture`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, '');
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, ''),
+(2, 'bram', '8b6bc5d8046c8466359d3ac43ce362ab', 2, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

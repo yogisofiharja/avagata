@@ -37,8 +37,7 @@
 					<a  href="<?php echo base_url('admin/get/user');?> " class="no-submenu" title="User" >User</a>
 					
 				</li>				
-				<li>
-					<a href="#" title="" class="no-submenu">Events</a>							
+				<li><a href="<?php echo base_url('admin/get/event');?>" title="" class="no-submenu">Events</a></li>							
 				<li><a class="no-submenu" href="#" title="">Image Gallery</a></li>				
 			</ul>
 		</nav>

@@ -64,7 +64,7 @@ class Get extends CI_Controller {
 		load_template_admin('admin/user', $data);
 	}
 	public function update_password($id, $stat=NULL){
-		$user = new user_model();
+		$user = new User_model();
 		$user->get_by('id_user', $id);
 		$data = array(
 			"stat" => $stat,
@@ -72,10 +72,22 @@ class Get extends CI_Controller {
 		);
 		load_template_admin('admin/update_password', $data);
 	}
-	public function update_user($id){
-		$user = new user_model();
+	public function update_user($id,$stat=NULL){
+		$user = new User_model();
 		$user->get_by('id_user', $id);
-		load_template_admin('admin/update_user', $user);
+		$data = array(
+			'stat' => $stat,
+			'user' => $user
+		);
+		load_template_admin('admin/update_user', $data);
+	}
+	
+	public function event(){
+		$event = new Event_model;
+		$data = array(
+			'list_event' => $event->all()
+		);
+		load_template_admin('admin/event',$data);
 	}
 	
 }

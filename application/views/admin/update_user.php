@@ -9,18 +9,17 @@
 <!-- Full Content Block -->
 <!-- Note that only 1st article need clearfix class for clearing -->
 
-<!--<form action="<?php echo base_url('admin/post/update_password')?>" method="POST">
-	<!-- Inputs -->
-	<!-- Use class .small, .medium or .large for predefined size 
+<form action="<?php echo base_url('admin/post/update_password')?>" method="POST">
+	
 	<fieldset>
-		<legend>Ganti Password <?php echo $username;?></legend>
+		<legend>Ganti Password <?php echo $user->username;?></legend>
 		
 		<dl>
 			<dt>
 				<label>Masukkan Password Lama </label>
 			</dt>
 			<dd>
-				<input type="hidden" name="id_user" value="<?php echo $id_user;?>">
+				<input type="hidden" name="id_user" value="<?php echo $user->id_user;?>">
 				<input type="password" class="small" name="password">
 			</dd>			
 			<dt>
@@ -48,4 +47,3 @@
 
 		</div>
 		<?php } ?>
--->
