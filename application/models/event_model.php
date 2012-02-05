@@ -26,7 +26,7 @@ class Event_model extends CI_Model{
 		    'nama_event' => $this->nama_event,
 		    'tgl_event' => $this->tgl_event,
 		    'tmp_event' => $this->tmp_event,
-		    'keterangan' => $this->keterengan
+		    'keterangan' => $this->keterangan
 	      );
 	      $this->db->insert('event', $data);
 	}
@@ -37,6 +37,7 @@ class Event_model extends CI_Model{
 	       $data=array(
 		    'nama_event' => $this->nama_event,
 		    'tgl_event' => $this->tgl_event,
+		    'jam_event' => $this->jam_event,
 		    'tmp_event' => $this->tmp_event,
 	            'keterengan' => $this->keterangan,
 	      );

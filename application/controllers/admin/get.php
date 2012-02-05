@@ -89,5 +89,8 @@ class Get extends CI_Controller {
 		);
 		load_template_admin('admin/event',$data);
 	}
+	public function tambah_event(){
+		load_template_admin('admin/tambah_event');
+	}
 	
 }

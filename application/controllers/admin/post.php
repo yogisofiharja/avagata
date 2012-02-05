@@ -87,7 +87,17 @@ class Post extends CI_Controller {
 			redirect("/");
 		}
 		
-	}	
-	
+	}
+	public function tambah_event(){
+		$event = new Event_model();
+		$event->nama_event=$this->input->post('nama_event');
+		$event->tgl_event=$this->input->post('tgl_event');
+		$event->jam_mulai_event=$this->input->post('jam_mulai_event');
+		$event->jam_akhir_event=$this->input->post('jam_akhir_event');
+		$event->tmp_event=$this->input->post('tmp_event');
+		$event->keterangan=$this->input->post('keterangan');
+		$event->save();
+		redirect('admin/get/event');
+	}
 	
 }

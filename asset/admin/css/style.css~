@@ -42,7 +42,7 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 1
 
 .ie7 img { -ms-interpolation-mode: bicubic; }
 a:link { -webkit-tap-highlight-color: #FF5E99; }
-body, select, input, textarea { color:#666; resize:vertical;}
+body, select, input, textarea { color:#666; }
 
 
 /*  Fonts  */
@@ -881,7 +881,7 @@ form {
 }
 form.table-form { margin-top:0; }
 button, input, select, textarea { margin:0; }
-textarea { overflow:auto; resize:vertical; }
+textarea { overflow:auto; }
 fieldset {
 	-moz-border-radius:3px;
 	border-radius:3px;
