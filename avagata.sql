@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.3.2
+-- version 3.3.10
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 01, 2012 at 01:06 PM
--- Server version: 5.1.58
--- PHP Version: 5.3.8-1~dotdeb.2
+-- Generation Time: Feb 05, 2012 at 03:12 PM
+-- Server version: 5.5.10
+-- PHP Version: 5.3.6
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -29,18 +28,20 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `event` (
   `id_event` int(3) NOT NULL AUTO_INCREMENT,
   `nama_event` varchar(50) NOT NULL,
-  `tgl_event` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `tgl_event` date NOT NULL,
+  `jam_mulai_event` time NOT NULL,
+  `jam_akhir_event` time NOT NULL,
   `tmp_event` varchar(100) NOT NULL,
   `keterangan` text NOT NULL,
   PRIMARY KEY (`id_event`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `event`
 --
 
-INSERT INTO `event` (`id_event`, `nama_event`, `tgl_event`, `tmp_event`, `keterangan`) VALUES
-(1, 'kimoi', '2012-02-01 06:01:17', 'kamar', 'aksdf;aklfm;akdsmf;aksdmfsdf');
+INSERT INTO `event` (`id_event`, `nama_event`, `tgl_event`, `jam_mulai_event`, `jam_akhir_event`, `tmp_event`, `keterangan`) VALUES
+(4, 'Makan Malam Bersama', '0000-00-00', '00:00:00', '00:00:00', 'Imah Seniman', 'Makan Malam Bersama para pembina dan seluruh pengurus beserta anggota POSS-UPI');
 
 -- --------------------------------------------------------
 
@@ -73,6 +74,11 @@ CREATE TABLE IF NOT EXISTS `media` (
   `media` varchar(200) NOT NULL,
   PRIMARY KEY (`id_media`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `media`
+--
+
 
 -- --------------------------------------------------------
 
@@ -112,16 +118,13 @@ CREATE TABLE IF NOT EXISTS `user` (
   `level` int(5) NOT NULL,
   `picture` varchar(200) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `level`, `picture`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, ''),
-(2, 'bram', '8b6bc5d8046c8466359d3ac43ce362ab', 2, '');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+(1, 'admin', '84fc02daf5252224f212e6383c243407', 1, ''),
+(2, 'bram', '8b6bc5d8046c8466359d3ac43ce362ab', 2, ''),
+(3, 'zia', '9efcafec516a86103d738a0384691130', 2, '');

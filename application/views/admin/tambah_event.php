@@ -24,7 +24,7 @@
 				<label>Tanggal Event</label>
 			</dt>
 			<dd>
-				<input type="text" class="small" name="tgl_event">
+				<input type="text" class="small" name="tgl_event" id="datepicker">
 			</dd>
 			<dt>
 				<label>Mulai</label>

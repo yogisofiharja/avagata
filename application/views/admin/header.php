@@ -19,6 +19,17 @@
 	<link rel="stylesheet" href="<?php echo base_url()?>asset/admin/css/jquery.wysiwyg.css">
 	<link rel="stylesheet" href="<?php echo base_url()?>asset/admin/css/jquery.datatables.css">
 	<link rel="stylesheet" href="<?php echo base_url()?>asset/admin/css/jquery.facebox.css">
+	<link rel="stylesheet" href="<?php echo base_url()?>asset/admin/css/ui.all.css">
+	<script type="text/javascript" src="<?php echo base_url()?>asset/admin/js/libs/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>asset/admin/js/jquery/ui.core.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>asset/admin/js/jquery/ui.datepicker.js"></script>
+
 
 	<script src="<?php echo base_url()?>asset/admin/js/libs/modernizr-1.7.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#datepicker").datepicker();
+		});
+	</script>
+
 </head>
